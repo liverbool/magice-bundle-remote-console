@@ -19,7 +19,7 @@
                 "source": {
                     "url": "https://github.com/phpconsole/phpconsole.git",
                     "type": "git",
-                    "reference": "master"
+                    "reference": "master-dev"
                 }
             }
         }
