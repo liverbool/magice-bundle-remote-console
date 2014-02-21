@@ -15,11 +15,11 @@
             "type": "library",
             "package": {
                 "name": "phpconsole/phpconsole",
-                "version": "master",
+                "version": "master-dev",
                 "source": {
                     "url": "https://github.com/phpconsole/phpconsole.git",
                     "type": "git",
-                    "reference": "dev-master"
+                    "reference": "master"
                 }
             }
         }
