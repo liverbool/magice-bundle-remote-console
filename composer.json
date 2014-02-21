@@ -31,7 +31,7 @@
         "psr-0": {
             "Magice\\Bundle\\RemoteConsoleBundle": "src/"
         },
-        "classmap" : ["vendor/phpconsole/phpconsole", "phpconsole.php"]
+        "classmap" : ["{$vendor}/phpconsole/phpconsole", "phpconsole.php"]
     },
     "extra": {
         "branch-alias": {
