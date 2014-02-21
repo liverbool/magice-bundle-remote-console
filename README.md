@@ -18,7 +18,7 @@ magice_remote_console:
         apikey: your api key
 ```
 
-### Useg
+### Use
 #### 1. Via container
 ```php
 $this->get('console')->push($data, [user]);
