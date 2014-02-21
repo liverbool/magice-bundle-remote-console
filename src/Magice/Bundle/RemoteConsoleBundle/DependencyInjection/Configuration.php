@@ -20,6 +20,19 @@ class Configuration implements ConfigurationInterface
         $treeBuilder = new TreeBuilder();
         $rootNode = $treeBuilder->root('magice_remote_console');
 
+        $rootNode
+            ->children()
+                ->arrayNode('config')
+                    ->children()
+                        ->scalarNode('domain')->end()
+                        ->scalarNode('nickname')->end()
+                        ->scalarNode('apikey')->end()
+                        ->scalarNode('depth')->end()
+                    ->end()
+                ->end()
+            ->end()
+            ;
+
         // Here you should define the parameters that are allowed to
         // configure your bundle. See the documentation linked above for
         // more information on that topic.
