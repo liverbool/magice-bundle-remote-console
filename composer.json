@@ -19,14 +19,14 @@
                 "source": {
                     "url": "https://github.com/phpconsole/phpconsole.git",
                     "type": "git",
-                    "reference": "master"
+                    "reference": "dev-master"
                 }
             }
         }
     ],
     "require": {
         "php": ">=5.3.2",
-        "phpconsole/phpconsole": "master-dev"
+        "phpconsole/phpconsole": "dev-master"
     },
     "autoload": {
         "psr-0": {
