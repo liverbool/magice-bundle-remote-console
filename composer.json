@@ -25,8 +25,7 @@
         }
     ],
     "require": {
-        "php": ">=5.3.2",
-        "phpconsole/phpconsole": "dev-master"
+        "php": ">=5.3.2"
     },
     "autoload": {
         "psr-0": {
