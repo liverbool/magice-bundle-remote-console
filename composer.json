@@ -1,0 +1,21 @@
+{
+    "name": "magice/remote-console-bundle",
+    "license": "MIT",
+    "type": "symfony-bundle",
+    "description": "Symfony bundle for https://phpconsole.com",
+    "homepage": "https://github.com/liverbool/magice-remote-console-bundle",
+    "authors": [
+        {
+            "name": "ツ Liverbool",
+            "email": "nukboon@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.2"
+    },
+    "autoload": {
+        "psr-0": {
+            "Magice\\Bundle\\RemoteConsoleBundle": "src/"
+        }
+    }
+}
