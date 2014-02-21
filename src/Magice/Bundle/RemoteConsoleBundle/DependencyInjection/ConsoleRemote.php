@@ -32,4 +32,13 @@ class ConsoleRemote implements ConsoleInterface
             return false;
         }
     }
+
+    public function error(\Exception $e, $user = false)
+    {
+        try {
+            return $this->console->send(sprintf('%s\n%s', $e->getMessage(), $e->getTraceAsString()), $user);
+        } catch (\Exception $e) {
+            return false;
+        }
+    }
 }

@@ -5,6 +5,7 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * @method static push($data, $user = false)
+ * @method static error(\Exception $e, $user = false)
  */
 class Console
 {
