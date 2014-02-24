@@ -3,7 +3,7 @@
     "license": "MIT",
     "type": "symfony-bundle",
     "description": "Symfony bundle for https://phpconsole.com",
-    "homepage": "https://github.com/liverbool/magice-remote-console-bundle",
+    "homepage": "https://github.com/liverbool/the-magice-remote-console-bundle",
     "authors": [
         {
             "name": "ツ Liverbool",
