@@ -22,14 +22,13 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
             ->children()
-                ->arrayNode('config')
-                    ->children()
-                        ->scalarNode('domain')->end()
-                        ->scalarNode('nickname')->end()
-                        ->scalarNode('apikey')->end()
-                        ->scalarNode('depth')->end()
-                    ->end()
+                ->arrayNode('projects')
+                    ->isRequired()
+                    ->requiresAtLeastOneElement()
+                    ->prototype('scalar')->end()
                 ->end()
+                ->scalarNode('default_project')->end()
+                ->scalarNode('context_size')->end()
             ->end()
             ;
 
