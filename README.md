@@ -11,24 +11,31 @@ $ php composer.phar require "magice/remote-console-bundle"
 ### Configuration
 app/config/config.yml
 ```yaml
+## see also: https://github.com/phpconsole/phpconsole#configuration
 magice_remote_console:
-    config:
-        domain: your domain
-        nickname: your name
-        apikey: your api key
+    projects: #required
+        projectName1    : ProjectKey1
+        projectName2    : ProjectKey2
+        ...             : ...
+    default_project: projectName1 #optional
+    context_size: 20 #optional
 ```
 
 ### Usage
 #### 1. Via container
 ```php
-$this->get('console')->push($data, [user]);
+$this->get('console')->push($data, [projectName]);
 // or
-$this->container->get('console')->push($data, [user]);
+$this->container->get('console')->push($data, [projectName]);
 ```
 
 #### 2. Via static
 ```php
 use Magice\Bundle\RemoteConsoleBundle\Console;
 .....
-Console::push($data, [user]);
+Console::push($data, [projectName]);
+Console::info($data, [projectName]);
+Console::success($data, [projectName]);
+Console::error($data, [projectName]);
+Console::trace(\Exception $exception, [projectName]);
 ```
