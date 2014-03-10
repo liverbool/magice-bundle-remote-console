@@ -10,8 +10,8 @@ $ php composer.phar require "magice/remote-console-bundle"
 
 ### Configuration
 app/config/config.yml
+see https://github.com/phpconsole/phpconsole#configuration
 ```yaml
-## see also: https://github.com/phpconsole/phpconsole#configuration
 magice_remote_console:
     projects: #required
         projectName1    : ProjectKey1
